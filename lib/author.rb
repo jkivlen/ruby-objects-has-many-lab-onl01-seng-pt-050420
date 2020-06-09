@@ -15,12 +15,17 @@ class Author
     post.author = self
   end
     
-  def add_post_by_title(title)
-    post = Post.new(title) 
+  def add_post_by_title(name)
+    post = Post.new(name) 
     self.posts << post
     post.author = self
   end
     
+     def add_song_by_name(name)
+    song = Song.new(name)
+    self.songs << song
+    song.artist = self
+  end
      
   
 end
