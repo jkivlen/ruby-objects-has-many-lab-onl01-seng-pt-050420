@@ -9,12 +9,10 @@ class Song
     @@all << self
   end
   
-def save
+def self.all
   @@all << self
 end
 
-def self.all
-  @@all
-end
+
   
 end
